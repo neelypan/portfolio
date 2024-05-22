@@ -1,3 +1,9 @@
+<!-- 
+  Neel Pandruvada
+  5/21/2024
+  Portfolio Website
+ -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -52,6 +58,10 @@
       </div>
     </nav>
     <header class="masthead">
+      <!--
+        Landing page
+        Has the title, background image, and a button to scroll down
+      -->
       <div
         class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
         <div class="d-flex justify-content-center">
@@ -75,6 +85,7 @@
     </header>
 
     <div class="container mt-5">
+      <!-- About me paragraph -->
       <div class="row justify-content-center">
         <div
           class="col-10 bg-secondary text-light text-center rounded-3"
@@ -111,6 +122,7 @@
         </div>
       </div>
       <div class="row justify-content-center mt-3">
+        <!-- Skills table + paragraph -->
         <div
           class="col-10 bg-primary-subtle text-primary text-center rounded-3"
           id="skills">
@@ -189,6 +201,7 @@
       </div>
 
       <div class="row justify-content-center mt-3">
+        <!-- Education timeline -->
         <div
           class="col-10 bg-danger text-light text-center rounded-3"
           id="education">
@@ -325,8 +338,11 @@
               >Personal Github Page</a
             >
           </p>
-          <main></main>
+          <main>
+            <!-- this is where the p5js canvases will be created -->
+          </main>
 
+          <!-- About Whackamole -->
           <h3 class="mt-3">Whackamole</h3>
           <a
             href="https://editor.p5js.org/neelyp/full/9uzf5rVy2"
@@ -339,12 +355,14 @@
             class="btn btn-info mb-2"
             onclick="document.querySelector('#whackamole-ss').hidden = !document.querySelector('#whackamole-ss').hidden">
             Toggle Code Screenshot
+            <!-- toggles the screenshot of the code -->
           </button>
           <img
             hidden
             id="whackamole-ss"
             src="img/whackamole.png"
             style="width: 75%" />
+            <!-- links to the fullscreen game, this also shows the code -->
           <p>
             This is a game where a circle of a random size floats around the
             screen and the user has to attempt to click it using their mouse.
@@ -401,12 +419,12 @@
           <hr />
 
           <h3>Currency Converter</h3>
+          <!-- Link to the currency converter website -->
           <a
             href="https://currency-converter-drab-five.vercel.app/"
             target="_blank"
             class="link-danger link-underline-opacity-0"
-            >View in Fullscreen</a
-          >
+            >View in Fullscreen</a>
           <br />
           <a
             href="https://github.com/neelyp/currency-converter"
@@ -418,6 +436,7 @@
           <br />
 
           <div class="ratio ratio-1x1">
+            <!-- embed of the website so you can use it without leaving the portfolio -->
             <iframe
               src="https://currency-converter-drab-five.vercel.app/" class="px-5 py-3"></iframe>
           </div>
@@ -459,7 +478,6 @@
         </div>
       </div>
 
-      <!-- Add custom JavaScript -->
       <script src="script.js"></script>
       <script src="projects/whackamole.js"></script>
       <script src="projects/dropper.js"></script>
