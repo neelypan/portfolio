@@ -1,8 +1,8 @@
 document
-  .getElementById('scroll-down-btn')
-  .addEventListener('click', function () {
+  .getElementById("scroll")
+  .addEventListener("click", function () {
     window.scrollTo({
       top: window.innerHeight,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   });

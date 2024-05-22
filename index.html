@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Neel Pandruvada</title>
     <!-- Add Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -16,13 +16,15 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/p5.js"></script>
+
     <!-- Add custom CSS -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">My Portfolio</a>
+        <a class="navbar-brand" href="#">Neel Pandruvada</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -40,114 +42,446 @@
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link" href="#skills">Skills & Expertise</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-     <header class="masthead">
-        <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-            <div class="d-flex justify-content-center">
-                <div class="text-center">
-                    <!-- Homepage thingy -->
-                    <h1 class="mx-auto my-0 text-uppercase">Neel Pandruvada</h1>
-                    <h2 class="text-white-50 mx-auto mt-2 mb-5">Portfolio</h2>
-                    <a class="btn btn-primary" href="#about">Learn More</a>
-                </div>
-            </div>
+    <header class="masthead">
+      <div
+        class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center"
+      >
+        <div class="d-flex justify-content-center">
+          <div class="text-center">
+            <h1
+              class="mx-auto my-0 text-uppercase"
+              style="transform: translateY(-75px)"
+              id="name"
+            >
+              Neel
+            </h1>
+            <h1 class="mx-auto mt-5 my-0 text-uppercase" id="name">
+              Pandruvada
+            </h1>
+            <h2 class="text-white-50 mx-auto mt-2 mb-5">Portfolio</h2>
+            <a class="btn btn-primary" href="#about" id="scroll"
+              >Learn More About Me</a
+            >
+          </div>
         </div>
+      </div>
     </header>
 
     <div class="container mt-5">
       <div class="row justify-content-center">
-        <div class="col-10 bg-dark text-light text-center rounded-3" id="about">
-          <h2>About</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quae.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quae.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quae.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quae.
-          </p>
+        <div
+          class="col-10 bg-secondary text-light text-center rounded-3"
+          id="about"
+        >
+          <h2 class="mt-3">About Me</h2>
+          <hr />
+          <div class="row">
+            <div class="col-7">
+              <p>
+                Hi - My name is Neel and I am currently a student at the Morris
+                County School of Technology (MSCT) in the Computer Science
+                Academy. In my free time, I like to play sports like Soccer and
+                Badminton with my friends, play with my dog, watch movies and
+                shows, play video games, and code. When I grow up, I aspire to
+                be in a computer science related job. Specifically, I want to be
+                either a Web Developer, since I really enjoy creating
+                interactive websites, or a software developer because I think
+                that creating software for different companies would be very
+                interesting and fun. I am a great candidate for computer science
+                roles because not only am I a great programmer and have great
+                problem solving skills, I have led multiple coding projects for
+                classes at my school, developing my leadership skills in the
+                workplace. Also, my school focuses on teaching computer science
+                skills to help us thrive in the industry and not just to pass
+                tests. This means that I learned the communication skills,
+                leadership, and problem solving skill needed by computer
+                scientists.
+              </p>
+            </div>
+            <div class="col-5 d-flex align-items-center">
+              <img src="img/neelyp25.png" style="width: 100%" class="m" />
+            </div>
+          </div>
         </div>
       </div>
       <div class="row justify-content-center mt-3">
-        <div class="col-10 bg-secondary text-light text-center rounded-3">
-          <h2>Skills and Expertise</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quae.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quae.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quae.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quae.
-          </p>
-        </div>
-        <div class="row justify-content-center mt-3">
-        <div class="col-10 bg-secondary text-light text-center rounded-3">
-          <h2>Education</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quae.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quae.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quae.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quae.
-          </p>
-        </div>
+        <div
+          class="col-10 bg-primary-subtle text-primary text-center rounded-3"
+          id="skills"
+        >
+          <h2 class="mt-3">Skills and Expertise</h2>
 
-        <div class="row justify-content-center mt-3">
-        <div class="col-10 bg-secondary text-light text-center rounded-3">
-          <h2>Projects</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quae.
+            The below table has a comprehensive list of the relavent computer
+            science technologies/skills that I am able to use to complete tasks.
+            Evidently, there are a lot of different things in this list, showing
+            that I can easily learn and become familiar with new technologies
+            very quickly.
+          </p>
+
+          <table class="table table-bordered table-info table-hover">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Skill</th>
+                <th scope="col">Year Learned</th>
+                <th scope="col">Level</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Python</th>
+                <td>2020</td>
+                <td>Intermediate</td>
+              </tr>
+              <tr>
+                <th scope="row">Javascript</th>
+                <td>2021</td>
+                <td>Advanced</td>
+              </tr>
+              <tr>
+                <th scope="row">Typescript</th>
+                <td>2022</td>
+                <td>Advanced</td>
+              </tr>
+              <tr>
+                <th scope="row">React</th>
+                <td>2021</td>
+                <td>Beginner-Intermediate</td>
+              </tr>
+              <tr>
+                <th scope="row">CSS</th>
+                <td>2021</td>
+                <td>Intermediate</td>
+              </tr>
+              <tr>
+                <th scope="row">HTML</th>
+                <td>2021</td>
+                <td>Advanced</td>
+              </tr>
+              <tr>
+                <th scope="row">C++</th>
+                <td>2020</td>
+                <td>Beginner</td>
+              </tr>
+              <tr>
+                <th scope="row">C#</th>
+                <td>2021</td>
+                <td>Beginner</td>
+              </tr>
+              <tr>
+                <th scope="row">Java</th>
+                <td>2024</td>
+                <td>Advanced</td>
+              </tr>
+              <tr>
+                <th scope="row">PC Building</th>
+                <td>2020</td>
+                <td>Beginner</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mt-3">
+        <div
+          class="col-10 bg-danger text-light text-center rounded-3"
+          id="education"
+        >
+          <h2 class="mt-3">Education</h2>
+          <div class="container-fluid py-5">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="horizontal-timeline">
+                  <ul class="list-inline items">
+                    <li class="list-inline-item items-list">
+                      <div class="px-4">
+                        <div
+                          class="event-date badge bg-info text-dark"
+                          style="font-size: x-small"
+                        >
+                          2014-2020
+                        </div>
+                        <h5 class="pt-2">Lakeview Elementary School</h5>
+                        <p class="text-info" style="font-size: large;">
+                          I went to elementary school at a school called
+                          Lakeview in my hometown Denville.
+                        </p>
+                        <div>
+                          <a
+                            href="https://www.lv.denville.org/"
+                            data-mdb-ripple-init
+                            class="btn btn-primary btn-sm"
+                            target="_blank"
+                            >Read more</a
+                          >
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-inline-item items-list">
+                      <div class="px-4">
+                        <div
+                          class="event-date badge bg-success text-dark"
+                          style="font-size: x-small"
+                        >
+                          2020-2023
+                        </div>
+                        <h5 class="pt-2">Valleyview Middle School</h5>
+                        <p class="text-info" style="font-size: large;">
+                          I went to middle school at a school called Vallyview
+                          in my hometown Denville.
+                        </p>
+                        <div>
+                          <a
+                            href="https://www.vv.denville.org/"
+                            target="_blank"
+                            data-mdb-ripple-init
+                            class="btn btn-primary btn-sm"
+                            >Read more</a
+                          >
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-inline-item items-list">
+                      <div class="px-4">
+                        <div
+                          class="event-date badge bg-danger-subtle text-dark"
+                          style="font-size: x-small"
+                        >
+                          2023-2026
+                        </div>
+                        <h5 class="pt-2">
+                          Morris County School of Technology (Computer Science)
+                        </h5>
+                        <p class="text-info" style="font-size: large;">
+                          During my highscool years, I am going to my county's
+                          technical school to study computer science in a more
+                          specialized and focused.
+                        </p>
+                        <div>
+                          <a
+                            href="https://www.mcvts.org/domain/1191"
+                            target="_blank"
+                            data-mdb-ripple-init
+                            class="btn btn-primary btn-sm"
+                            >Read more</a
+                          >
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-inline-item items-list">
+                      <div class="px-4">
+                        <div class="event-date badge bg-warning text-dark">
+                          2027
+                        </div>
+                        <h5 class="pt-2">CCM for Senior Year of Highschool</h5>
+                        <p class="text-info">
+                          During my senior year of highschool, I have will be
+                          going to school at the County College of Morris,
+                          allowing me to get college credits and learn more
+                          advanced concepts in core subjects as well as computer
+                          science subjects.
+                        </p>
+                        <div>
+                          <a
+                            href="https://catalog.ccm.edu/credit/areasofstudy/computerscience/"
+                            data-mdb-ripple-init
+                            target="_blank"
+                            class="btn btn-primary btn-sm"
+                            >Read more</a
+                          >
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mt-3">
+        <div
+          class="col-10 bg-success-subtle text-sucess text-center rounded-3"
+          id="projects"
+        >
+          <h2 class="mt-3">Projects</h2>
+          <p>
+            I have made many coding projects during my life, You can try the two
+            examples are below and were made using <kbd>p5js</kbd>. You can also
+            check out my
+            <a
+              class="link-danger link-underline-opacity-0"
+              href="https://github.com/neelyp?tab=repositories"
+              target="_blank"
+              >School Github Page</a
+            >
+            and my
+            <a
+              class="link-danger link-underline-opacity-0"
+              href="https://github.com/neelypan"
+              target="_blank"
+              >Personal Github Page</a
+            >
+          </p>
+          <main></main>
+
+          <h3 class="mt-3">Whackamole</h3>
+          <a
+            href="https://editor.p5js.org/neelyp/full/9uzf5rVy2"
+            target="_blank"
+            class="link-danger link-underline-opacity-0"
+            >Play in Fullscreen</a
+          >
+          <br />
+          <button
+            class="btn btn-info mb-2"
+            onclick="document.querySelector('#whackamole-ss').hidden = !document.querySelector('#whackamole-ss').hidden"
+          >
+            Toggle Code Screenshot
+          </button>
+          <img
+            hidden
+            id="whackamole-ss"
+            src="img/whackamole.png"
+            style="width: 75%"
+          />
+          <p>
+            This is a game where a circle of a random size floats around the
+            screen and the user has to attempt to click it using their mouse.
+            Based on the size and speed, you get a certain amount of points. A
+            smaller and faster circle would give more points than a big, slow
+            circle. After three missed clicks, the game ends and it displays
+            your score along with your devices highscore.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quae.
+            This project requires knowledge of
+            <kbd>Object Oriented Programming</kbd> in order to work with classes
+            for the circle and incorporating it into the overall project. It
+            also requires knowledge of <kbd>local storage</kbd> in order to read
+            and save your highscore.
+          </p>
+
+          <hr />
+
+          <h3>Dropper</h3>
+          <a
+            href="https://editor.p5js.org/neelyp/full/LzXsBiL1r"
+            target="_blank"
+            class="link-danger link-underline-opacity-0"
+            >Play in Fullscreen</a
+          >
+          <br />
+          <button
+            class="btn btn-info mb-2"
+            onclick="document.querySelector('#dropper-ss').hidden = !document.querySelector('#dropper-ss').hidden"
+          >
+            Toggle Code Screenshot
+          </button>
+          <img
+            hidden
+            id="dropper-ss"
+            src="img/dropper.png"
+            style="width: 75%"
+          />
+          <p>
+            This is a simple dropper game where a square falls from the sky and
+            the user uses the arrow keys to navigate a paddle to "catch" the
+            square. One successful catch results in a point, and one miss causes
+            the game to end and a loss for the player.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quae.
+            This project also requires extensive knowledge of
+            <kbd>Object Oriented Programming</kbd> since there are 2 main
+            classes involved (1 for the paddle and 1 for the dropper) and these
+            have to be put together to work with the main game logic. This game
+            is very heavy on collision logic and it was originally a challenge
+            to make sure that even a slight touch between the paddle and dropper
+            resulted in a point. Similarly to the Whackamole game, this also
+            uses <kbd>localstorage</kbd> to save and load highscores.
+          </p>
+
+          <hr />
+
+          <h3>Currency Converter</h3>
+          <a
+            href="https://currency-converter-drab-five.vercel.app/"
+            target="_blank"
+            class="link-danger link-underline-opacity-0"
+            >View in Fullscreen</a
+          >
+          <br>
+          <a
+            href="https://github.com/neelyp/currency-converter"
+            target="_blank"
+            class="btn btn-danger link-underline-opacity-0 mt-3"
+            >Code Link</a
+          >
+
+          <br />
+
+          <iframe
+            src="https://currency-converter-drab-five.vercel.app/"
+            frameborder="0"
+            height="500"
+            width="500"
+            class="my-3"
+          ></iframe>
+
+          <p>
+            This was one of the most fun projects I made during my freshman year
+            in highschool. It is a simple <kbd>React</kbd> webpage that uses an
+            api from
+            <a href="https://currencyapi.com" class="link-danger"
+              >currencyapi.com and it allows the user to either type in a
+              currency code or select a currency from a dropdown menu and type
+              in the amount of USD to convert into that currency.</a
+            >
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quae.
+            This project requires knowledge in many aspects of front end
+            development. These include <kbd>HTML</kbd>, <kbd>CSS</kbd>,
+            <kbd>JavaScript</kbd>, <kbd>React</kbd>, and <kbd>API's</kbd> as
+            well.
+          </p>
+          <hr />
+          <p>
+            Again, if you are interested in looking at any of my other public
+            projects, take a look at my Github pages linked here:
+            <a
+              class="link-danger link-underline-opacity-0"
+              href="https://github.com/neelyp?tab=repositories"
+              target="_blank"
+              >School Github Page</a
+            >
+            and my
+            <a
+              class="link-danger link-underline-opacity-0"
+              href="https://github.com/neelypan"
+              target="_blank"
+              >Personal Github Page</a
+            >
           </p>
         </div>
+      </div>
+
+      <!-- Add custom JavaScript -->
+      <script src="script.js"></script>
+      <script src="projects/whackamole.js"></script>
+      <script src="projects/dropper.js"></script>
     </div>
-
-    <!-- Add custom JavaScript -->
-    <script src="script.js"></script>
   </body>
 </html>
